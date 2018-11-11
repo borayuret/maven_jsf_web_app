@@ -6,17 +6,17 @@
 <title>Login App</title>
 </head>
 <body>
-	<h2>Login</h2>
+	<h2>Login App</h2>
 
 	<h:outputText value="#{loginBean.errorMsg}"
 		rendered="#{loginBean.errorMsg != null}" style="color:red;" />
 
-	<h:form>   User Name: <h:inputText id="userName"
+	<h:form>   Kullanıcı Adı: <h:inputText id="userName"
 			value="#{loginBean.userName}" />
-		<br />   Password: <h:inputSecret id="password"
+		<br />   Şifre: <h:inputSecret id="password"
 			value="#{loginBean.password}" />
 		<br />
-		<h:commandButton value="Submit" action="#{loginBean.validate}" />
+		<h:commandButton value="Giriş" action="#{loginBean.validate}" />
 	</h:form>
 </body>
 </html>
